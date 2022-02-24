@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    fontFamilies I like
+                casual
+                cursive-->
+
+    <!--   Talkback
+        try running talkback on app
+        reference  add images to your android app
+        4 - note
+         importantForAccessibility and contentDescription
+          is what I will be testing-->
+
+    <!--        android:shadowColor="@color/gold_24_light"-->
+    <!--        android:shadowDx="7"-->
+    <!--        android:shadowDy="10"-->
+    <!--        android:shadowRadius=".1"-->
+
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baby_mother"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="cursive"
+        android:shadowColor="@color/crow"
+        android:shadowDx="7"
+        android:shadowDy="10"
+        android:shadowRadius=".1"
+        android:text="@string/wish0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gold_24_dark"
+        android:textSize="66sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/bday_quote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="@string/bday_quote"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gold_24_light"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/signature_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:id="@+id/signature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="cursive"
+        android:selectAllOnFocus="false"
+        android:text="@string/signature_text"
+        android:shadowColor="@color/crow"
+        android:shadowDx="7"
+        android:shadowDy="10"
+        android:shadowRadius=".1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gold_24_light"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!--TODO
+        fragment of an image, when clicked,
+        opens up
+        like a birthday card-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/bdayImg"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/cupcakesimple" />-->
+
+    <!--    TODO
+    textview that contains quote/message for receiver-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

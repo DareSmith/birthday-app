@@ -1,0 +1,42 @@
+<resources>
+    <!--    TODO
+        replace names with dataBinding features
+        can adjust based on to/from-->
+
+<!--    Birthday Wish(common things included)
+    Greeting/Opening
+    Person's name & age
+    Wish
+    What you are thankful for
+
+    How do you want them to feel?
+    Happy
+    Laugh
+    Smile
+    Uncomfortable joy
+    etc...-->
+
+    <string name="app_name">The Birthday App!</string>
+    <string name="signature_text"> From Dareus</string>
+    <string name="bday_person_name">Ashley</string>
+    <string name="person_wishing">Dareus</string>
+
+    <!--    opening could be
+        greeting, bday person's name
+        simply put, it's an intro/opener-->
+    <string name="opening"></string>
+
+    <!--    list of wishes/quotes for receiver-->
+    <string name="wish0"> WOOHOO!!! </string>
+    <string name="wish1"> Happy Birthday, [Ashley]! </string>
+    <string name="wish2"> Oh my goodness- today\'s your birthday! </string>
+    <string name="wish3"> Hey...Happy Birthday! </string>
+
+
+    <!--   Examples  @{name, greeting, wish}
+     “[Aliyah], Happy Birthday to one of my favorite people in the history of ever.”
+    “[Elana], thanks for being here, for being you.”
+    “Be safe, have fun, take pictures, and enjoy every minute of this exciting time in your life!”-->
+    <string name="bday_quote"> [Ashley], hope you make your [25th] a birthday to remember! </string>
+
+</resources>
